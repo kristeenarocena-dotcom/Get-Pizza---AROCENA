@@ -119,6 +119,9 @@
   .btn--yellow {
     @apply bg-secondary text-black hover:bg-amber-200;
   }
+  .btn--primary--b {
+    @apply border-2 border-primary mt-10 hover:bg-primary ;
+  }
   .foodTabs.active {
     @apply bg-secondary p-1 rounded-full inline-flex;
   }
@@ -128,7 +131,7 @@
   }
 
   .foodItemWrap {
-    @apply grid grid-cols-1 gap-10 md:grid-cols-2;
+    @apply grid grid-cols-2 gap-10 md:grid-cols-2;
   }
 
   .foodItem {
@@ -138,7 +141,7 @@
     @apply block lg:block;
   }
   .cards {
-    @apply flex flex-col gap-3 p-8 border border-white rounded-xl text-white items-center w-100 md:w-150;
+    @apply flex flex-col p-8 border border-white rounded-xl text-white items-center w-auto md:w-150;
   }
 
   .cards ul {
