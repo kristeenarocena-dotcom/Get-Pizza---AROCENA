@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Pizza - AROCENA</title>
-    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet"/>
     <link rel="icon" href="../favicon.ico" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
     <!--header-->
     <header class="py-2 fixed shadow-md w-full z-50">
       <div class="container">
@@ -57,69 +59,121 @@
       </h5> 
     </section>
 
-    <!--banner section-->
-    <section class="bg-accent pb-10 md:pb-0">
-      <div class="container md:px-40">
-        <!--wrapper-->
-        <div class="grid grid-cols-1 gap-2 items-center md:grid-cols-2 md:flex flex-row-reverse">
-        
-            <!--left-->
-            <div><img src="../IMG/banner-home.png" alt="home-banner"></div>
-            <!--right-->
-            <div>
-            <h1 class="text-4xl pb-8 md:text-7xl "><strong>HUNGRY?</strong> YOU'RE IN THE RIGHT PLACE</h1>
-            <!--button-->
-            <a class="btn btn--red" href="#">VIEW OUR MENU</a>    
+    <!--banner-->
+    <section>
+        <div class="container">
+            <!--wrapper-->
+            <div class="grid grid-cols-1 md:grid-cols-2 py-10">
+                <!--YT-->
+                <div class="flex justify-center pb-3"><iframe
+                width="600"
+                height="415"
+                src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=RlFO6G3bjHTHHMPM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+                </div>
+
+                <!--DETAILS-->
+                <div class="flex flex-col justify-center">
+                    <h1 class="text-5xl text-primary font-bold">SERVING GET PIZZAS <br> BY THE SINCE 1985</h1>
+                    <p>We would like to take this opportunity to welcome you at our Pizza House. We
+                    are offering a warm, friendly atmosphere to share a meal with family and
+                    friends at any time of the day or evening.</p>
+                </div>
             </div>
-            
         </div>
-      </div>
     </section>
 
-    <!-- chef's section-->
-    <section class="py-20 md:pt-10 md:pb-60">
-      <div class="container md:px-40">
-        <!-- wrapper -->
-        <div class="flex flex-col items-center md:flex-row">
-          <!-- img -->
-          <div class="relative">
-            <div
-              class="top-0 left-4 w-90 h-60 md:w-100 md:h-70 rounded-2xl overflow-hidden shadow-xl border-8 border-black z-10"
-            >
-              <img
-                class="w-full h-full object-cover"
-                src="../IMG/3chefs.png"
-                alt="chefs"
-              />
+    <!--Our Story Section-->
+    <section class="story py-5">
+        <div class="container">
+          <h2 class="pb-8 flex justify-center">OUR STORY</h2>
+            <!--wrapper-->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-50 md:w-300 mx-auto">
+                <!--left/top-->
+                <div class="timeline--detail">
+                   <!--1-->
+                <div class="timeline">
+                    <div class="year">
+                        <h4>1985</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="detail">
+                        <p>1985 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        enim ad minim veniam. ex ea commodo consequatuis irure. Dolor
+                        in reprehenderit in volue.</p>
+                    </div>
+                </div>
+
+                <!--2-->
+                <div class="timeline">
+                    <div class="year">
+                        <h4>1990</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="detail">
+                        <p>1990 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        enim ad minim veniam. ex ea commodo consequatuis irure. Dolor
+                        in reprehenderit in volue.</p>
+                    </div>
+                </div>
+
+                <!--3-->
+                <div class="timeline">
+                    <div class="year">
+                        <h4>2000</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="detail">
+                        <p>2000 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        enim ad minim veniam. ex ea commodo consequatuis irure. Dolor
+                        in reprehenderit in volue.</p>
+                    </div>
+                </div>
+
+                <!--4-->
+                <div class="timeline">
+                    <div class="year">
+                        <h4>2010</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="detail">
+                        <p>2010 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        enim ad minim veniam. ex ea commodo consequatuis irure. Dolor
+                        in reprehenderit in volue.</p>
+                    </div>
+                </div>
+
+                <!--5-->
+                <div class="timeline">
+                    <div class="year">
+                        <h4>2021</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="detail">
+                        <p>2021 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        enim ad minim veniam. ex ea commodo consequatuis irure. Dolor
+                        in reprehenderit in volue.</p>
+                    </div>
+                </div>   
+                 </div>
+                  
+                <!--right/hidden on mobile-->
+                <div class="hidden md:block"><img src="../IMG/meeting.png" alt="meeting" class="rounded-2xl"> </div>
+                
             </div>
-            <div
-              class="absolute top-50 left-10 md:left-20 w-90 h-60 md:w-100 md:h-70 rounded-2xl overflow-hidden shadow-xl border-8 border-black z-20"
-            >
-              <img
-                class="w-full h-full object-cover"
-                src="../IMG/food.png"
-                alt="food"
-              />
-            </div>
-          </div>
-          <!-- Details -->
-          <div class="pt-50 md:pt-20 md:pl-50 items-center md:w-3/4">
-            <h2 class="mt-10">WELCOME TO GET PIZZA</h2>
-            <h5 class="text-primary py-4">
-              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-              ANY TIME OF THE DAY AND NIGHT
-            </h5>
-            <p>
-              We would like to take this opportunity to welcome you at our Pizza
-              House. We are offering a warm, friendly atmosphere to share a meal
-              with family and friends at any time of the day and evening
-            </p>
-          </div>
         </div>
-      </div>
     </section>
 
-  <!-- Food Section -->
+    <!-- Food Section -->
     <section class="bg-tertiary py-10 text-center">
       <div class="container">
         <!-- wrapper -->
@@ -961,6 +1015,64 @@
       </div>
     </section>
 
+    <!--Review Section-->
+  <section class="py-10 flex justify-center">
+  <div class="container">
+    <h3 class="pb-5 flex justify-center">CLIENTS REVIEW</h3>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slider-track">
+
+        <!-- review1 -->
+        <div class="slider-item flex flex-col justify-center items-center w-auto">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+        <!-- review2 -->
+        <div class="slider-item flex flex-col justify-center items-center">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback2.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+        <!-- review3 -->
+        <div class="slider-item flex flex-col justify-center items-center">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback3.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+        <!-- review4 -->
+        <div class="slider-item flex flex-col justify-center items-center">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback4.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+        <!-- review5 -->
+        <div class="slider-item flex flex-col justify-center items-center">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback5.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+        <!-- review6 -->
+        <div class="slider-item flex flex-col justify-center items-center">   
+          <img class="w-30 h-40 pb-5 rounded-full object-cover" src="../IMG/feedback6.png" alt="">
+          <p class="text-center pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, libero sit autem voluptates deleniti sapiente odio ea vel nisi.<br> Dolorem quod dolor ullam cumque vitae at quidem. Non similique aspernatur, nostrum repudiandae quasi <br> sapiente adipisci repellat minus libero numquam rerum.</p>
+          <p class="italic">Patrick Greenish</p>
+        </div>
+
+      </div>
+    </div>
+    <!-- End Slider -->
+
+  </div>
+  </section>
+
     <!-- CTA section -->
     <section class="py-5 md:py-0 bg-primary md:px-40">
       <div class="container">
@@ -1023,5 +1135,9 @@
     <!--javascript-->
     <script src="./js/toggle-menu.js"></script>
     <script src="./js/foodTabs.js"></script>
-  </body>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
+
+    
+</body>
 </html>

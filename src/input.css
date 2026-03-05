@@ -141,7 +141,7 @@
     @apply block lg:block;
   }
   .cards {
-    @apply flex flex-col p-8 border border-white rounded-xl text-white items-center w-auto md:w-150;
+    @apply flex flex-col p-8 border border-white rounded-xl text-white items-center w-auto md:w-90 mt-10 ;
   }
 
   .cards ul {
@@ -167,3 +167,83 @@ footer {
 .text {
   @apply items-center text-center;
 }
+
+
+.timeline {
+  @apply shadow-md mb-4 overflow-hidden transition-all duration-300;
+}
+.timeline h4, .timeline i{
+  @apply text-white;
+}
+.timeline p{
+  @apply text-black;
+}
+/* Year header row */
+.timeline .year {
+  @apply bg-primary flex items-center justify-between px-4 py-3 cursor-pointer;
+}
+
+.timeline .year h4 {
+  @apply text-lg font-semibold;
+}
+
+.timeline .year i {
+  @apply transition-transform duration-300;
+}
+
+.timeline .detail {
+  @apply max-h-0 overflow-hidden px-4 text-sm leading-relaxed transition-all duration-300;
+}
+
+/* Expanded state */
+.timeline.active .detail {
+  @apply max-h-screen pb-4;
+}
+
+.timeline.active .year i {
+  @apply rotate-180;
+}
+
+/* Slider wrapper */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Track that holds all reviews */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each review item */
+.slider-item {
+  min-width: 100%; /* full width per slide */
+  flex-shrink: 0;
+}
+
+/* Optional: dots navigation */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.slider-dots button {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+.slider-dots button.active {
+  background: #333;
+}
+
+
+
+
+
+
