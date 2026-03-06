@@ -114,7 +114,7 @@
     @apply inline-block px-6 py-3 font-medium w-auto text-center;
   }
   .btn--red {
-    @apply bg-primary text-white hover:bg-red-300;
+    @apply bg-primary text-white hover:bg-red-500;
   }
   .btn--yellow {
     @apply bg-secondary text-black hover:bg-amber-200;
@@ -151,7 +151,43 @@
   .cards img {
     @apply size-40;
   }
+.eventTab {
+    @apply font-bold border-r pr-3 cursor-pointer lg:px-10 border-white;
+  }
+
+  .eventTab:last-child {
+    @apply border-none;
+  }
+
+  .eventTab.active {
+    @apply text-primary border-white;
+  }
+
+  .eventItemWrap {
+    @apply grid grid-cols-3 gap-0 lg:gap-10 items-center;
+  }
+
+  .eventItem {
+    @apply hidden lg:hidden;
+  }
+
+  .eventItem.active {
+    @apply block lg:block;
+  }
+
+  .menuCards {
+    @apply flex flex-col gap-3 p-5 lg:border lg:border-white rounded-xl text-white text-center items-center w-full h-120;
+  }
+
+  .menuCards ul {
+    @apply flex flex-row;
+  }
+
+  .menuCards img {
+    @apply size-40;
+  }
 }
+
 
 footer {
   @apply p-5;
@@ -242,6 +278,49 @@ footer {
   background: #333;
 }
 
+.form input,
+.form textarea {
+  @apply bg-white rounded-lg;
+}
+
+.form input {
+  @apply h-10;
+}
+
+.form textarea {
+  @apply h-50;
+}
+
+.form--detail {
+  @apply flex space-x-4;
+}
+
+.contact-section {
+    @apply py-16;
+    background: var(--color-secondary);
+  }
+  .contact-form__title {
+    @apply text-4xl font-bold text-center mb-10 text-black;
+  }
+
+  .contact-form {
+    @apply space-y-5;
+  }
+
+  .contact-form__row {
+    @apply grid gap-3 grid-cols-2;
+  }
+
+  .contact-form__input {
+    @apply w-full rounded-xl px-5 py-4 border border-gray-200 bg-white text-gray-700
+   placeholder-gray-400 shadow-sm focus:border-primary focus:ring-2 focus:ring-primary/30 focus:outline-none;
+  }
+
+  .contact-form__textarea {
+    @apply h-44 resize-none;
+  } 
+
+  
 
 
 
